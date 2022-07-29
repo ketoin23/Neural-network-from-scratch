@@ -15,10 +15,44 @@ For classification models predicting the probability, the loss function most com
 ### Gradient Descent
 initialized the weights(w1,w2) with 1 , bias with 0, and learning rate with 0.5
 
-For each epoch a weighted sum is calculated -> w1 * Age + w2 * Affordability
+For each epoch a weighted sum is calculated   ->    **w1 * Age + w2 * Affordability**
 
-Converted into predictions -> Sigmoid(weighted_sum)
+Converted into predictions    ->    **Sigmoid(weighted_sum)**
 
-Calculates loss -> Log_loss(y_true, y_predicted)
+Calculates loss   ->    **Log_loss(y_true, y_predicted)**
 
 Re-adjusting weights and biases using the following formula : 
+![formula1](NN_static/formula.png)
+![formula2](NN_static/formula2.png)
+## Tensorflow Keras vs Custom Neural Network
+Trained the data with Keras using the same parameters with the following results and compared difference
+
+Tensorflow results :
+
+**w1** = 4.745832
+
+**w2** = 1.5486312
+
+**bias** = -3.0031297
+
+**loss** = 0.4778
+
+Custom neural network results :
+
+**w1** = 4.632335
+
+**w2** = 1.710244
+
+**bias** = -3.116969
+
+**loss** = 0.4686
+
+Difference :
+
+**w1 -> 2.39 %**
+
+**w2 -> -10.43 %**
+
+**bias -> -3.79 %**
+
+**loss -> 0.92 %** (ours is marginally better)
