@@ -6,4 +6,5 @@ The dataset contains 3 features : Age, Affordability, and Bought_insurance
 
 ## Custom Neural Network implementation and parameters
 ### Activation function : Sigmoid
-As we have to do a binary prediction of whether someon bought insurance or not, sigmoid would be an ideal choice.
+As we have to do a binary prediction of whether someon bought insurance or not, sigmoid is an ideal choice.
+![Sigmoid](NN_static/sigmoid.png)
